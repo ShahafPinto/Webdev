@@ -1,0 +1,30 @@
+body {
+    background-color: beige;
+    margin: 20px;
+    font-family:'Kolker Brush', cursive;
+}
+h1 {
+    font-family:Papyrus;
+    font-size:300%;
+    text-align: center;
+}
+h2 {
+    font-size:100%;
+    text-align: left;
+}
+h3 {
+    text-align: center;
+}
+.standard-img {
+    border: 5px solid rgb(251, 115, 5);
+    width:40%;
+    height:40%;
+    display: block;
+    margin: 20px;
+    margin-right: auto; 
+    margin-left: auto;
+    box-shadow: 7px 7px 7px #827b7b;
+}
+.gradient {
+    background-image: linear-gradient(to bottom right, beige, rgb(143, 72, 21));
+}
