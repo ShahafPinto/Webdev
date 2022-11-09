@@ -1,12 +1,33 @@
+
 body {
+    grid-template-areas: "header header"
+                         "menu   main"
+                         "footer footer";
+    grid-template-columns: 1fr 2fr 2fr;
+    gap: 20px;
+    /* line-gap-override: black; */
     background-color: beige;
     margin: 20px;
     font-family:'Kolker Brush', cursive;
 }
 h1 {
+    grid-area: header;
     font-family:Papyrus;
     font-size:300%;
     text-align: center;
+}
+.menu{
+    grid-area: menu;
+}
+.menu{
+    grid-area: menu;
+}
+.main{
+    grid-area: main;
+
+}
+footer{
+    grid-area: footer;
 }
 h2 {
     font-size:100%;
