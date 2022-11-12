@@ -1,10 +1,12 @@
 
+
 body {
-    background-color: beige;
+    background-color: rgb(245, 220, 244);
     margin: 0px;
     font-family:'Kolker Brush', cursive;
-    /* overflow: hidden; */
 }
+
+/* default mode: */
 .header{
     display: flex;
     flex-direction: row-reverse;
@@ -15,12 +17,10 @@ body {
     width: 100%;
     height: 100px; 
     z-index: 1;
-    /* align-items: center; */
-    
 }
 a:link.header{
     text-decoration:none;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 a:visited.header{
     text-decoration:none;
@@ -50,12 +50,12 @@ ul{
     padding: 0;
     text-align: center;
 }
-#navtitle{
-    color: black;
+.navtitle{
+    color: rgb(255, 255, 255);
     text-align: center;
 }
 .menu-odd{
-    background-color:rgb(241, 158, 221);;
+    background-color:rgb(241, 158, 221);
     min-height: 60px;
 }
 .menu-even{
@@ -65,8 +65,26 @@ ul{
 .main {
     margin-top: 100px;
     margin-left: 100px;
-    margin-bottom: 50px;
-    /* overflow: scroll; */
+    /* margin-bottom: 50px; */
+    /* margin: 20px; */
+    padding-left: 20px;
+    
+}
+.mainpage{
+    text-align: center;
+    padding: 150px 80px;
+}
+.series, .place{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.seriesright, .placeright{
+    margin-top: 100px;
+    max-height: 500px;
+    overflow: scroll;
+}
+#series, #place, #form{
+    padding-top: 100px;
 }
 footer {
     background-color: rgb(239, 37, 192);
@@ -96,15 +114,70 @@ h3 {
     align-items: center;
 }
 .standard-img {
-    border: 5px solid rgb(251, 115, 5);
-    width:40%;
-    height:40%;
+    border: 2px solid rgb(105, 6, 90);
+    width:70%;
+    height:70%;
     display: block;
     margin: 20px;
     margin-right: auto; 
     margin-left: auto;
-    box-shadow: 7px 7px 7px #827b7b;
+    box-shadow: 7px 7px 7px #838282;
 }
 .gradient {
     background-image: linear-gradient(to bottom right, beige, rgb(143, 72, 21));
 }
+.formfirst , .formsecond{
+    display: grid;
+    grid-template-areas:"headerr headerr"
+                        "lt       rt"
+                        "lb      rb";
+    grid-template-columns: 1fr 1fr;
+    border-style:solid;
+    border-color: rgb(245, 106, 213);
+    margin: 10px;
+}
+.formfirst .top, .formsecond .top{
+    margin: 5px;
+    grid-area: headerr;
+}
+.formfirst .lt, .formsecond .lt{
+    grid-area:lt;
+    font-size: 70%;
+    /* display: flex;
+    flex-direction: row; */
+    margin: 5px;
+}
+.formfirst .lb, .formsecond .lb{
+    grid-area:lb;
+    font-size: 70%;
+    margin: 5px;
+}
+.formfirst .rt, .formsecond .rt{
+    grid-area:rt;
+    font-size: 70%;
+    margin: 5px;
+}
+.formfirst .rb{
+    font-size: 70%;
+    grid-area:rb;
+    margin: 5px;
+}
+.formfinish{
+    margin-left: 10px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+
+/* to dark mode remove from the comment: */
+
+/* .dark * {
+    background-color: rgb(152, 0, 117);
+    color: black;
+    color-scheme: dark; 
+    
+}
+.dark.mainpage{
+    text-align: center;
+    padding: 150px 80px;
+    background-color: rgb(152, 0, 117);
+} */
