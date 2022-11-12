@@ -3,7 +3,7 @@
 body {
     background-color: rgb(245, 220, 244);
     margin: 0px;
-    font-family:'Kolker Brush', cursive;
+    font-family:'Kolker Brush', cursive, Arial, Helvetica, sans-serif;
 }
 
 /* default mode: */
@@ -101,7 +101,10 @@ footer {
     font-size: 70%;
 }
 h1 {
-    font-family:Papyrus;
+    font-family:Papyrus, Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-wrap: nowrap;
+    
     font-size: 150%;
     margin-top: auto;
     margin-bottom: auto;
