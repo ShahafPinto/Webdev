@@ -129,6 +129,7 @@ main{
     border-radius: 8%;
 }
 
+
 figcaption .popup{
     position: absolute;
     top: 16%;
@@ -191,6 +192,9 @@ footer{
     grid-area:rt;
     font-size: 70%;
     margin: 5px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    
 }
 .formfirst .rb{
     font-size: 70%;
@@ -202,6 +206,17 @@ footer{
     margin-bottom: 50px;
     padding-bottom: 50px;
 }
+
+input[type=text], input[type=email], input[type=number], input[type=date],textarea,select{
+    border: 2px solid rgb(225, 0, 255);
+    border-radius: 4px;
+}
+input[type="submit"], input[type="reset"]{
+    border: 2px solid rgb(225, 0, 255);
+    background-color: rgb(241, 158, 221);
+    border-radius: 4px;
+}
+
 .footercontainer{
     display: flex;
     flex-direction: column;
