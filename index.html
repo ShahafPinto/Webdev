@@ -2,26 +2,24 @@
 <html>
     
     <head>
-        <title>Week2 Shahaf Pinto</title>
+        <title>Assignment-2 Shahaf Pinto</title>
         <meta charset="UTF-8">
         <link rel="icon" type="image/x-icon" href="images/hacker.png">
-        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/gridstyle.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
-        <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-        <!-- <link href="https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Kolker+Brush&family=Quicksand&family=Rubik+Bubbles&display=swap" rel="stylesheet">
     </head>
 
     <body class="dark">
-        <header>
-            <a href="#" class="header">
-                <h1>WebDev Bootcamp Shahaf Pinto</h1>
-                <img src="images/hacker.png" id="logo">
-            </a>
-        </header>
-        
+        <div class="container">
+            <header>                
+                    <a href="#start" class="headercontainer">
+                        <h1>WebDev Bootcamp Shahaf Pinto</h1>
+                        <img src="images/hacker.png" id="logo">
+                    </a>
+            </header>
             <nav>
-                <grid>
+                <div class="navcontainer">
                     <h2 class="navtitle">navigation</h2>
                     <ul>
                         <li class="menu-odd"><a href="#series">My Favorite Series</a></li>
@@ -30,110 +28,121 @@
                         <li  class="menu-even"><a href="/schools.html" target="_blank">My schools</a></li>
                         <li  class="menu-odd"><a href="https://github.com/ShahafPinto/Webdev.git" target="_blank">This Project On GitHub</a></li>
                     </ul>
-                </grid>    
+                </div>
             </nav>
             
-            <div class="main">
-                <section class="mainpage">    
-                Hi! I am so exited! Welcome to my project<br>
-                </section>
-                <section class="series">  
-                    <div class="seriesleft">
-                        <h2 id="series">My Favorite Mini Series</h2>
+            <main>
+                <div class="maincontainer">
+                    <section class="mainpage" id="start">    
+                    Hi! I am so exited!<br>Welcome to my project
+                    </section>
+                    <section class="series">  
+                        <div class="seriesleft">
+                            <h2 id="series">My Favorite Mini Series</h2>
+                                <div>
+                                    My favorite mini series that I recently watched on Netflix is 'The Playlist' 
+                                    <br>
+                                    <a href="https://www.netflix.com/il/title/81186296" target="_blank">Link to watch on Netflix</a>
+                
+                                    This series talk about the music revolution, How the music became accessible on the internet from physical means such as CDs, records and more.
+                                    And of course about the establishment of 'Spotify'.
+                                </div>
+                        </div>
+                        <div class="seriesright">
+                            <img class="standard-img" src="https://tsncdn.azureedge.net/newsimagesfull/newsinner_20221017055759_1.039" alt="Playlist picture">
+                        </div>
+                    </section>
+                    <section class="place">    
+                        <div class="placeleft">
+                            <h2 id="place">My favorite place to visit: Rome</h2>
                             <div>
-                                My favorite mini series that I recently watched on Netflix is 'The Playlist' 
+                                
+                                My last visit to Rome was last May with my husband- Amit.
                                 <br>
-                                <a href="https://www.netflix.com/il/title/81186296" target="_blank">Link to watch on Netflix</a>
-            
-                                This series talk about the music revolution, How the music became accessible on the internet from physical means such as CDs, records and more.
-                                And of course about the establishment of 'Spotify'.
-                            </div>
-                    </div>
-                    <div class="seriesright">
-                        <img class="standard-img" src="https://tsncdn.azureedge.net/newsimagesfull/newsinner_20221017055759_1.039" alt="Playlist picture">
-                    </div>
-                </section>
-                <section class="place">     
-                    <div class="placeleft">
-                        <h2 id="place">My favorite place to visit: Rome</h2>
-                        <div>
+                                My favorite food is Italian, so I celebrate in Rome.
+                                <br>
+                                in the picturs you can see the best pasta I ate in this visit- 'Carbonara Pasta', and me and my dear husband Amit
+                
+                            </div> 
+                        </div>
+                        <div class="placeright">
+                            <figure class="thumbanil">
+                                <img class="standard-img" src="images/rome1.jpeg" alt="Me and my husband">
+                                <figcaption>
+                                    <img class="popup" src="/images/thumbnail.jpeg">
+                                </figcaption>
+                            </figure> 
+                            <figure class="thumbanil">
+                                <img class="standard-img" src="images/rome2.jpeg" alt="Pasta in Rome">
+                                <figcaption>
+                                    <img class="popup" src="/images/thumbnail (2).jpeg">
+                                </figcaption>
+                            </figure> 
+                        </div>
+                        <section class="placeleftbottom"></section>
+                        <section class="placerightbottom">
                             <a href="https://goo.gl/maps/PaRoRGBSSvRyme289" target="_blank">Link to Rome in Google-Maps</a>
-                            <br>
-                            My last visit to Rome was last May with my husband- Amit.
-                            <br>
-                            My favorite food is Italian, so I celebrate in Rome.
-                            <br>
-                            in the picturs you can see the best pasta I ate in this visit- 'Carbonara Pasta', and me and my dear husband Amit
-            
-                        </div> 
-                        <!-- <h2>My favorite food:</h2>
-                        <ol>
-                            <li>Pasta</li>
-                            <li>Sushi</li>
-                            <li>CheeseBurger</li>
-                        </ol> -->
-                    </div>
-                    <div class="placeright">
-                        <img class="standard-img" src="images/rome1.jpeg" alt="Me and my husband">
-                        <img class="standard-img" src="images/rome2.jpeg" alt="Pasta in Rome">
-                    </div>
-                </section>
-                <section class="form">
-                    <h2 id="form">Feedback Form</h2> 
-                    <h4>I'd love to hear your honest thoughts!</h4>
-                    <form action="index.html">
-                        <div class="formfirst">
-                            <h5 class="top">Personal Details:</h5>
-                            <section class="lt">
-                                <label>Full Name:<input type="text" required></label>
-                            </section>
-                            <section class="lb">
-                                <label>Email:<input type="email" required></label>
-                            </section>
-                            <section class="rt">
-                                <label>Phone number:<input type="number"></label>
-                            </section>
-                            <section class="rb">
-                                <label>Date of birth:<input type="date" min="1990-01-01" max="2025-01-01" value="2000-01-01"></label>
-                            </section>
-                        </div>
-                        <div class="formsecond">
-                            <h5 class="top">Your Feedback:</h5>
-                            <section class="lt">
-                                Rating:<input type="radio" name="rating" value="1">1          
-                                <input type="radio" name="rating" value="2">2
-                                <input type="radio" name="rating" value="3">3
-                                <input type="radio" name="rating" value="4">4
-                                <input type="radio" name="rating" value="5">5
-                            </section>
-                            <section class="lb">
-                                <label>How did you find this website?
-                                    <select id="howfind">
-                                    <option>GitHub</option>
-                                    <option>Linkdin</option>
-                                    <option>WebDev</option>
-                                    <option>Google</option>
-                                    <option>Other</option>
-                                    </select>
-                                </label>
-                            </section>
-                            <section class="rt">
-                                <label>Your Message:<textarea name="message" rows="4" cols="20"></textarea></label>
-                            </section>    
-                        </div>
-                        <div class="formfinish">
-                            <input type="submit" value="Submit">
-                            <input type="reset" value="Reset">
-                        </div>    
-                    </form>
-                </section>
-            </div>
-        
-        <footer>
-            Shahaf Pinto<br>
-            <a href = "mailto:shahaf.pinto@grunitech.com?subject = Feedback&body = Message">
-                shahaf.pinto@grunitech.com
-            </a>
-        </footer>
+                        </section>
+                    </section>
+                    <section class="form">
+                        <h2 id="form">Feedback Form</h2> 
+                        <h4>I'd love to hear your honest thoughts!</h4>
+                        <form action="index.html">
+                            <div class="formfirst">
+                                <h5 class="top">Personal Details:</h5>
+                                <section class="lt">
+                                    <label>Full Name:<input type="text" required></label>
+                                </section>
+                                <section class="lb">
+                                    <label>Email:<input type="email" required></label>
+                                </section>
+                                <section class="rt">
+                                    <label>Phone number:<input type="number"></label>
+                                </section>
+                                <section class="rb">
+                                    <label>Date of birth:<input type="date" min="1990-01-01" max="2025-01-01" value="2000-01-01"></label>
+                                </section>
+                            </div>
+                            <div class="formsecond">
+                                <h5 class="top">Your Feedback:</h5>
+                                <section class="lt">
+                                    Rating:<input type="radio" name="rating" value="1">1          
+                                    <input type="radio" name="rating" value="2">2
+                                    <input type="radio" name="rating" value="3">3
+                                    <input type="radio" name="rating" value="4">4
+                                    <input type="radio" name="rating" value="5">5
+                                </section>
+                                <section class="lb">
+                                    <label>How did you find this website?
+                                        <select id="howfind">
+                                        <option>GitHub</option>
+                                        <option>Linkdin</option>
+                                        <option>WebDev</option>
+                                        <option>Google</option>
+                                        <option>Other</option>
+                                        </select>
+                                    </label>
+                                </section>
+                                <section class="rt">
+                                    <label>Your Message:<textarea name="message" rows="4" cols="20"></textarea></label>
+                                </section>    
+                            </div>
+                            <div class="formfinish">
+                                <input type="submit" value="Submit">
+                                <input type="reset" value="Reset">
+                            </div>    
+                        </form>
+                    </section>
+                </div>
+            </main>
+            <footer>
+                <div class="footercontainer">
+                    Shahaf Pinto<br>
+                    <a href = "mailto:shahaf.pinto@grunitech.com?subject = Feedback&body = Message">
+                        shahaf.pinto@grunitech.com
+                    </a>
+                </div>
+            </footer>
+        </div>
     </body>
 </html>

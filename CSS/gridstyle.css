@@ -1,0 +1,244 @@
+
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 0.5fr 3fr 0.3fr;
+    grid-template-areas: "header header"
+                         "nav main"
+                         "footer footer";
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+}
+
+header{
+    background: rgb(239, 37, 192);
+    grid-area: header;
+    font-family: 'Rubik Bubbles', cursive;
+}
+.headercontainer{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 9px;
+}
+#logo{
+    max-width: 40px;
+    max-height: 60px;
+}
+a:link.headercontainer{
+    text-decoration:none;
+    color: rgb(255, 255, 255);
+}
+a:visited.headercontainer{
+    text-decoration:none;
+    color: rgb(255, 255, 255);
+}
+a:hover.headercontainer{
+    background-color: rgb(152, 0, 117);
+    color: black;
+}
+
+nav{
+    background: rgb(245, 106, 213);
+    grid-area: nav;
+
+}
+.navcontainer{
+    display:flex;
+    flex-direction: column;
+    width: 100px;
+    background-color:rgb(245, 106, 213);
+}
+ul{
+    display: grid;
+    gap: 5px;
+    list-style-type: none;
+    margin: 0; 
+    padding: 0;
+    text-align: center;
+    font-size: 10px;
+}
+.navtitle{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.menu-odd{
+    background-color:rgb(241, 158, 221);
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 130%;
+}
+.menu-even{
+    background-color:rgb(241, 35, 193);
+    min-height: 60px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 130%;
+}
+
+main{
+    background:  rgb(245, 220, 244);
+    grid-area: main;
+    overflow: scroll;
+    padding: 5px;
+}
+.maincontainer{
+    display: grid;
+    grid-template-rows: repeat(4,minmax(400px,auto));
+    grid-template-areas: "main"
+                         "series"
+                         "place"
+                         "form";
+}
+.mainpage{
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 150%;
+}
+.series{
+    grid-area: series;
+}
+.place{
+    grid-area: place;
+}
+.form{
+    grid-area: form;
+}
+.series, .place{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 0.3fr;
+}
+.seriesright, .placeright{
+    max-height: 300px;
+    overflow: scroll;
+}
+.placerightbottom{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding-top: 10px;
+    margin-top: 5px;
+    background-color: rgb(241, 158, 221);
+    border-radius: 8%;
+}
+
+figcaption .popup{
+    position: absolute;
+    top: 16%;
+    left: 27%;
+    height: 65%;
+    width: 35%;
+    visibility: hidden;
+}
+figure.thumbanil:hover
+    figcaption .popup{
+        position: absolute;
+        top: 16%;
+        left: 27%;
+        height: 65%;
+        width: 35%;
+        visibility: visible;
+    }
+
+footer{
+    background: rgb(239, 37, 192);
+    grid-area: footer;
+}
+
+.standard-img {
+    border: 2px solid rgb(105, 6, 90);
+    width:70%;
+    height:70%;
+    display: block;
+    margin: 20px;
+    margin-right: auto; 
+    margin-left: auto;
+    box-shadow: 7px 7px 7px #838282;
+}
+
+.formfirst , .formsecond{
+    display: grid;
+    grid-template-areas:"headerr headerr"
+                        "lt       rt"
+                        "lb      rb";
+    grid-template-columns: 1fr 1fr;
+    border-style:solid;
+    border-color: rgb(245, 106, 213);
+    margin: 10px;
+}
+.formfirst .top, .formsecond .top{
+    margin: 5px;
+    grid-area: headerr;
+}
+.formfirst .lt, .formsecond .lt{
+    grid-area:lt;
+    font-size: 70%;
+    margin: 5px;
+}
+.formfirst .lb, .formsecond .lb{
+    grid-area:lb;
+    font-size: 70%;
+    margin: 5px;
+}
+.formfirst .rt, .formsecond .rt{
+    grid-area:rt;
+    font-size: 70%;
+    margin: 5px;
+}
+.formfirst .rb{
+    font-size: 70%;
+    grid-area:rb;
+    margin: 5px;
+}
+.formfinish{
+    margin-left: 10px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+.footercontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-top: 5px;   
+}
+
+@media only screen and (max-width: 300px)
+{
+    main{
+        background: rgb(245, 220, 244);
+        grid-area: main;
+        padding: 5px;
+        overflow: hidden;
+    }
+}
+
+
+
+
+.gradient {
+    background-image: linear-gradient(to bottom right, beige, rgb(143, 72, 21));
+}
+
+/* to dark mode remove from the comment: */
+
+/* .dark * {
+    background-color: rgb(152, 0, 117);
+    color: black;
+}
+.dark.mainpage{
+    text-align: center;
+    padding: 150px 80px;
+    background-color: rgb(152, 0, 117);
+} */
