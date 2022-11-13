@@ -11,54 +11,55 @@
     font-family: 'Quicksand', sans-serif;
     color: rgb(0, 0, 0);
     font-size: 12px;
+    position: fixed;
 }
 
 header{
     background: rgb(239, 37, 192);
     grid-area: header;
     font-family: 'Rubik Bubbles', cursive;
-    /* position: fixed; */
     width: 100%; 
-    /* margin: 0; */
-    /* bottom: ; */
+    border-radius: 5px;
+    border-color:#faae33 ;
+    border-style: double;
 }
+
 .headercontainer{
     display: flex;
-    
-    /* position: fixed; */
     flex-direction: row-reverse;
     justify-content: flex-end;
     align-items: center;
-    /* margin-top: 9px; */
+
 }
 #logo{
     max-width: 40px;
     max-height: 60px;
 }
+header:hover{
+    background: rgb(152, 0, 117);
+    /* color: black */
+}
 a:link.headercontainer{
     text-decoration:none;
-    color: rgb(255, 255, 255);
 }
 a:visited.headercontainer{
     text-decoration:none;
     color: rgb(255, 255, 255);
 }
-a:hover.headercontainer{
-    background: rgb(152, 0, 117);
-    color: black;
-}
+/* a:hover.headercontainer{
+} */
 
 nav{
     background: rgb(245, 106, 213);
     grid-area: nav;
-    /* position: fixed; */
+    border-radius: 5px;
+    border-color:#faae33 ;
+    border-style: double;
 }
 .navcontainer{
     display:flex;
     flex-direction: column;
-    /* width: 100px; */
     background-color:rgb(245, 106, 213);
-    /* margin-top: 5px; */
 }
 ul{
     display: grid;
@@ -159,6 +160,10 @@ figure.thumbanil:hover
 footer{
     background: rgb(239, 37, 192);
     grid-area: footer;
+    border-radius: 5px;
+    border-color:#faae33 ;
+    border-style: double;
+    
 }
 
 .standard-img {
@@ -225,13 +230,15 @@ input[type="submit"], input[type="reset"]{
     border-radius: 4px;
 }
 
+
 .footercontainer{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
-    padding-top: 5px;   
+    padding-top: 5px;  
+    
 }
 
 @media only screen and (max-width: 300px)
